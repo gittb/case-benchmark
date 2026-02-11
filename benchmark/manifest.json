@@ -1,0 +1,166 @@
+{
+  "name": "CASE Benchmark",
+  "version": "1.0.0",
+  "description": "Carrier-Agnostic Speaker Verification Evaluation Benchmark",
+  "author": "Ben Gitter",
+  "license": "CC-BY-NC-4.0",
+  "source_dataset": "VoxCeleb1-O (test set)",
+  "source_speakers": 40,
+  "total_utterances": 4874,
+  "sample_rate": 16000,
+  "audio_format": "wav",
+  "protocols": {
+    "clean_clean": {
+      "description": "Clean enrollment vs clean verification (baseline)",
+      "category": "clean",
+      "trials": 10000
+    },
+    "clean_codec_alaw": {
+      "description": "Clean enrollment vs A-law codec degraded",
+      "category": "codec",
+      "trials": 10000
+    },
+    "clean_codec_gsm": {
+      "description": "Clean enrollment vs GSM codec degraded",
+      "category": "codec",
+      "trials": 10000
+    },
+    "clean_codec_mp3_32k": {
+      "description": "Clean enrollment vs MP3 32kbps degraded",
+      "category": "codec",
+      "trials": 10000
+    },
+    "clean_codec_opus_6k": {
+      "description": "Clean enrollment vs Opus 6kbps degraded",
+      "category": "codec",
+      "trials": 10000
+    },
+    "clean_codec_opus_12k": {
+      "description": "Clean enrollment vs Opus 12kbps degraded",
+      "category": "codec",
+      "trials": 10000
+    },
+    "clean_codec_opus_24k": {
+      "description": "Clean enrollment vs Opus 24kbps degraded",
+      "category": "codec",
+      "trials": 10000
+    },
+    "clean_codec_ulaw": {
+      "description": "Clean enrollment vs μ-law codec degraded",
+      "category": "codec",
+      "trials": 10000
+    },
+    "clean_mic_conference_ceiling": {
+      "description": "Clean enrollment vs conference ceiling mic filtered",
+      "category": "mic",
+      "trials": 10000
+    },
+    "clean_mic_headset_usb": {
+      "description": "Clean enrollment vs USB headset mic filtered",
+      "category": "mic",
+      "trials": 10000
+    },
+    "clean_mic_laptop_internal": {
+      "description": "Clean enrollment vs laptop internal mic filtered",
+      "category": "mic",
+      "trials": 10000
+    },
+    "clean_mic_phone": {
+      "description": "Clean enrollment vs phone mic filtered",
+      "category": "mic",
+      "trials": 10000
+    },
+    "clean_mic_smartphone_flagship": {
+      "description": "Clean enrollment vs flagship smartphone mic filtered",
+      "category": "mic",
+      "trials": 10000
+    },
+    "clean_mic_webcam_budget": {
+      "description": "Clean enrollment vs budget webcam mic filtered",
+      "category": "mic",
+      "trials": 10000
+    },
+    "clean_mic_webcam_quality": {
+      "description": "Clean enrollment vs quality webcam mic filtered",
+      "category": "mic",
+      "trials": 10000
+    },
+    "clean_noise_snr_5": {
+      "description": "Clean enrollment vs 5dB SNR noise added",
+      "category": "noise",
+      "trials": 10000
+    },
+    "clean_noise_snr_10": {
+      "description": "Clean enrollment vs 10dB SNR noise added",
+      "category": "noise",
+      "trials": 10000
+    },
+    "clean_noise_snr_15": {
+      "description": "Clean enrollment vs 15dB SNR noise added",
+      "category": "noise",
+      "trials": 10000
+    },
+    "clean_noise_snr_20": {
+      "description": "Clean enrollment vs 20dB SNR noise added",
+      "category": "noise",
+      "trials": 10000
+    },
+    "clean_noise_snr_25": {
+      "description": "Clean enrollment vs 25dB SNR noise added",
+      "category": "noise",
+      "trials": 10000
+    },
+    "clean_reverb": {
+      "description": "Clean enrollment vs reverb added (real RIRs from OpenSLR-28/BUT)",
+      "category": "reverb",
+      "trials": 10000
+    },
+    "clean_playback_alaw_snr25_phone": {
+      "description": "Clean enrollment vs playback chain (A-law codec + phone mic + room)",
+      "category": "playback",
+      "trials": 10000
+    },
+    "clean_playback_gsm_snr20_webcam_budget": {
+      "description": "Clean enrollment vs playback chain (GSM codec + budget webcam + room)",
+      "category": "playback",
+      "trials": 10000
+    },
+    "clean_playback_ulaw_snr15_laptop_internal": {
+      "description": "Clean enrollment vs playback chain (μ-law codec + laptop mic + room)",
+      "category": "playback",
+      "trials": 10000
+    }
+  },
+  "categories": {
+    "clean": {
+      "description": "Baseline clean audio",
+      "n_protocols": 1
+    },
+    "codec": {
+      "description": "Audio codec degradations (telephony, VoIP)",
+      "n_protocols": 7
+    },
+    "mic": {
+      "description": "Microphone frequency response simulation",
+      "n_protocols": 7
+    },
+    "noise": {
+      "description": "Additive DEMAND noise at various SNR levels",
+      "n_protocols": 5,
+      "source": "DEMAND corpus (https://zenodo.org/record/1227121)"
+    },
+    "reverb": {
+      "description": "Real room impulse responses",
+      "n_protocols": 1,
+      "source": "OpenSLR-28 + BUT ReverbDB (real RIRs)"
+    },
+    "playback": {
+      "description": "Full playback chain (codec + speaker + room + microphone)",
+      "n_protocols": 3
+    }
+  },
+  "data_urls": {
+    "huggingface": "https://huggingface.co/datasets/bigstorm/case-benchmark",
+    "zenodo": "TBD"
+  }
+}

@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+title: "CASE Benchmark: Carrier-Agnostic Speaker Verification Evaluation"
+message: "If you use the CASE Benchmark, please cite it as below."
+type: dataset
+authors:
+  - family-names: "Gitter"
+    given-names: "Ben"
+repository-code: "https://github.com/gittb/case-benchmark"
+license: CC-BY-NC-4.0
+version: "1.0.0"
+date-released: "2026-01-29"
+keywords:
+  - speaker verification
+  - speaker recognition
+  - benchmark
+  - audio processing
+  - robustness evaluation
+  - carrier conditions
+abstract: >-
+  The CASE (Carrier-Agnostic Speaker Embedding) Benchmark evaluates speaker
+  verification model robustness across real-world acoustic carrier conditions
+  including codecs, microphones, noise, reverb, and playback chains. It reveals
+  significant performance gaps in state-of-the-art models and demonstrates how
+  carrier-aware training can improve robustness.

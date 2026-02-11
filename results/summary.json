@@ -1,0 +1,103 @@
+{
+  "benchmark_name": "CASE Benchmark",
+  "description": "Carrier-Agnostic Speaker Verification Evaluation",
+  "num_models": 6,
+  "leaderboard": [
+    {
+      "rank": 1,
+      "model_name": "WeSpeaker ResNet34",
+      "case_score_v1": 5.030331746019767,
+      "case_score_absolute": 0.03013698412691465,
+      "degradation_factor": 0.024336984126914648,
+      "clean_eer": 0.0058,
+      "category_breakdown": {
+        "clean": 0.0058,
+        "codec": 0.017285714285713398,
+        "mic": 0.005942857142855237,
+        "noise": 0.007259999999952414,
+        "reverb": 0.05879999999999995,
+        "playback": 0.08573333333296689
+      }
+    },
+    {
+      "rank": 2,
+      "model_name": "SpeechBrain ECAPA-TDNN",
+      "case_score_v1": 5.271993423951916,
+      "case_score_absolute": 0.030451269840796175,
+      "degradation_factor": 0.024851269840796403,
+      "clean_eer": 0.005599999999999776,
+      "category_breakdown": {
+        "clean": 0.005599999999999776,
+        "codec": 0.01762857142860399,
+        "mic": 0.0071857142854581555,
+        "noise": 0.008759999999701812,
+        "reverb": 0.04979999999814662,
+        "playback": 0.09373333333286672
+      }
+    },
+    {
+      "rank": 3,
+      "model_name": "CASE HF v2-512",
+      "case_score_v1": 2.724802003679901,
+      "case_score_absolute": 0.03525111111097051,
+      "degradation_factor": 0.02305111111117518,
+      "clean_eer": 0.012199999999795335,
+      "category_breakdown": {
+        "clean": 0.012199999999795335,
+        "codec": 0.01689999999972052,
+        "mic": 0.012299999999663715,
+        "noise": 0.013539999999999868,
+        "reverb": 0.06559999999999938,
+        "playback": 0.09096666666664426
+      }
+    },
+    {
+      "rank": 4,
+      "model_name": "NeMo TitaNet-L",
+      "case_score_v1": 5.972576671433456,
+      "case_score_absolute": 0.040511746031453584,
+      "degradation_factor": 0.03391174603145476,
+      "clean_eer": 0.006599999999998824,
+      "category_breakdown": {
+        "clean": 0.006599999999998824,
+        "codec": 0.016128571428184694,
+        "mic": 0.006028571427802635,
+        "noise": 0.007579999999963688,
+        "reverb": 0.08059999999998163,
+        "playback": 0.12613333333279006
+      }
+    },
+    {
+      "rank": 5,
+      "model_name": "pyannote Embedding",
+      "case_score_v1": 2.4963374149965447,
+      "case_score_absolute": 0.0446914285711398,
+      "degradation_factor": 0.027891428571441654,
+      "clean_eer": 0.01679999999969814,
+      "category_breakdown": {
+        "clean": 0.01679999999969814,
+        "codec": 0.04227142857138407,
+        "mic": 0.017557142856858717,
+        "noise": 0.01991999999970629,
+        "reverb": 0.0594,
+        "playback": 0.11219999999919154
+      }
+    },
+    {
+      "rank": 6,
+      "model_name": "Resemblyzer",
+      "case_score_v1": 2.008427417099567,
+      "case_score_absolute": 0.10488412698347861,
+      "degradation_factor": 0.0564841269853964,
+      "clean_eer": 0.04839999999808221,
+      "category_breakdown": {
+        "clean": 0.04839999999808221,
+        "codec": 0.0695999999999993,
+        "mic": 0.05387142857136592,
+        "noise": 0.05979999999926124,
+        "reverb": 0.18489999999999998,
+        "playback": 0.21273333333216304
+      }
+    }
+  ]
+}

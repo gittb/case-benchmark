@@ -1,0 +1,276 @@
+{
+  "model_name": "pyannote Embedding",
+  "case_score": 2.4963374149965447,
+  "case_score_v2": {
+    "case_score_absolute": 0.0446914285711398,
+    "degradation_factor": 0.027891428571441654,
+    "clean_eer": 0.01679999999969814
+  },
+  "config": {
+    "benchmark_dir": "benchmark",
+    "device": "cuda",
+    "eval_time_seconds": 165.31758546829224
+  },
+  "contributions": {
+    "clean": {
+      "avg_eer": 0.01679999999969814,
+      "normalized_eer": 0.01679999999969814,
+      "degradation": 0.0,
+      "weight": 1.0,
+      "n_protocols": 1
+    },
+    "codec": {
+      "avg_eer": 0.04227142857138407,
+      "normalized_eer": 2.5161564626275954,
+      "degradation": 0.025471428571685932,
+      "weight": 1.0,
+      "n_protocols": 7
+    },
+    "mic": {
+      "avg_eer": 0.017557142856858717,
+      "normalized_eer": 1.0450680272127488,
+      "degradation": 0.0007571428571605775,
+      "weight": 1.0,
+      "n_protocols": 7
+    },
+    "noise": {
+      "avg_eer": 0.01991999999970629,
+      "normalized_eer": 1.1857142857181078,
+      "degradation": 0.003120000000008151,
+      "weight": 1.0,
+      "n_protocols": 5
+    },
+    "playback": {
+      "avg_eer": 0.11219999999919154,
+      "normalized_eer": 6.6785714286433056,
+      "degradation": 0.0953999999994934,
+      "weight": 1.0,
+      "n_protocols": 3
+    },
+    "reverb": {
+      "avg_eer": 0.0594,
+      "normalized_eer": 3.535714285777815,
+      "degradation": 0.04260000000030186,
+      "weight": 1.0,
+      "n_protocols": 1
+    }
+  },
+  "protocol_results": {
+    "clean_clean": {
+      "eer": 0.01679999999969814,
+      "eer_threshold": 0.23735252022743225,
+      "min_dcf": 0.14680000000000004,
+      "min_dcf_threshold": 0.39941930770874023,
+      "num_trials": 10000,
+      "num_target": 5000,
+      "num_impostor": 5000
+    },
+    "clean_codec_alaw": {
+      "eer": 0.04419999999999988,
+      "eer_threshold": 0.1494193822145462,
+      "min_dcf": 0.33679999999999993,
+      "min_dcf_threshold": 0.30804526805877686,
+      "num_trials": 10000,
+      "num_target": 5000,
+      "num_impostor": 5000
+    },
+    "clean_codec_gsm": {
+      "eer": 0.07139999999969812,
+      "eer_threshold": 0.12668365240097046,
+      "min_dcf": 0.4933999999999999,
+      "min_dcf_threshold": 0.2731819152832031,
+      "num_trials": 10000,
+      "num_target": 5000,
+      "num_impostor": 5000
+    },
+    "clean_codec_mp3_32k": {
+      "eer": 0.019199999999999995,
+      "eer_threshold": 0.21819527447223663,
+      "min_dcf": 0.16780000000000003,
+      "min_dcf_threshold": 0.34439367055892944,
+      "num_trials": 10000,
+      "num_target": 5000,
+      "num_impostor": 5000
+    },
+    "clean_codec_opus_12k": {
+      "eer": 0.02699999999999989,
+      "eer_threshold": 0.20380179584026337,
+      "min_dcf": 0.16800000000000004,
+      "min_dcf_threshold": 0.3753191828727722,
+      "num_trials": 10000,
+      "num_target": 5000,
+      "num_impostor": 5000
+    },
+    "clean_codec_opus_24k": {
+      "eer": 0.019,
+      "eer_threshold": 0.22664953768253326,
+      "min_dcf": 0.14019999999999996,
+      "min_dcf_threshold": 0.32833313941955566,
+      "num_trials": 10000,
+      "num_target": 5000,
+      "num_impostor": 5000
+    },
+    "clean_codec_opus_6k": {
+      "eer": 0.06639999999999069,
+      "eer_threshold": 0.12853187322616577,
+      "min_dcf": 0.5554,
+      "min_dcf_threshold": 0.286357581615448,
+      "num_trials": 10000,
+      "num_target": 5000,
+      "num_impostor": 5000
+    },
+    "clean_codec_ulaw": {
+      "eer": 0.04869999999999998,
+      "eer_threshold": 0.14656583964824677,
+      "min_dcf": 0.3462,
+      "min_dcf_threshold": 0.30604737997055054,
+      "num_trials": 10000,
+      "num_target": 5000,
+      "num_impostor": 5000
+    },
+    "clean_mic_conference_ceiling": {
+      "eer": 0.017499999999999988,
+      "eer_threshold": 0.2197985053062439,
+      "min_dcf": 0.13979999999999998,
+      "min_dcf_threshold": 0.3570384085178375,
+      "num_trials": 10000,
+      "num_target": 5000,
+      "num_impostor": 5000
+    },
+    "clean_mic_headset_usb": {
+      "eer": 0.017199999999999997,
+      "eer_threshold": 0.22528137266635895,
+      "min_dcf": 0.16959999999999995,
+      "min_dcf_threshold": 0.36277633905410767,
+      "num_trials": 10000,
+      "num_target": 5000,
+      "num_impostor": 5000
+    },
+    "clean_mic_laptop_internal": {
+      "eer": 0.01619999999801318,
+      "eer_threshold": 0.22848105430603027,
+      "min_dcf": 0.19240000000000004,
+      "min_dcf_threshold": 0.3915731906890869,
+      "num_trials": 10000,
+      "num_target": 5000,
+      "num_impostor": 5000
+    },
+    "clean_mic_phone": {
+      "eer": 0.01780000000000003,
+      "eer_threshold": 0.22864702343940735,
+      "min_dcf": 0.14780000000000004,
+      "min_dcf_threshold": 0.3880597949028015,
+      "num_trials": 10000,
+      "num_target": 5000,
+      "num_impostor": 5000
+    },
+    "clean_mic_smartphone_flagship": {
+      "eer": 0.0168,
+      "eer_threshold": 0.22764098644256592,
+      "min_dcf": 0.13979999999999998,
+      "min_dcf_threshold": 0.35011398792266846,
+      "num_trials": 10000,
+      "num_target": 5000,
+      "num_impostor": 5000
+    },
+    "clean_mic_webcam_budget": {
+      "eer": 0.018799999999997853,
+      "eer_threshold": 0.22457684576511383,
+      "min_dcf": 0.1544,
+      "min_dcf_threshold": 0.3615829050540924,
+      "num_trials": 10000,
+      "num_target": 5000,
+      "num_impostor": 5000
+    },
+    "clean_mic_webcam_quality": {
+      "eer": 0.018599999999999974,
+      "eer_threshold": 0.23321160674095154,
+      "min_dcf": 0.13020000000000007,
+      "min_dcf_threshold": 0.36770081520080566,
+      "num_trials": 10000,
+      "num_target": 5000,
+      "num_impostor": 5000
+    },
+    "clean_noise_snr_10": {
+      "eer": 0.019799999999997882,
+      "eer_threshold": 0.20774078369140625,
+      "min_dcf": 0.17259999999999998,
+      "min_dcf_threshold": 0.3915278911590576,
+      "num_trials": 10000,
+      "num_target": 5000,
+      "num_impostor": 5000
+    },
+    "clean_noise_snr_15": {
+      "eer": 0.019199999998952007,
+      "eer_threshold": 0.22739636898040771,
+      "min_dcf": 0.13940000000000005,
+      "min_dcf_threshold": 0.36598625779151917,
+      "num_trials": 10000,
+      "num_target": 5000,
+      "num_impostor": 5000
+    },
+    "clean_noise_snr_20": {
+      "eer": 0.01819999999958159,
+      "eer_threshold": 0.2246052622795105,
+      "min_dcf": 0.16279999999999994,
+      "min_dcf_threshold": 0.39440494775772095,
+      "num_trials": 10000,
+      "num_target": 5000,
+      "num_impostor": 5000
+    },
+    "clean_noise_snr_25": {
+      "eer": 0.016999999999999977,
+      "eer_threshold": 0.22873756289482117,
+      "min_dcf": 0.14400000000000002,
+      "min_dcf_threshold": 0.39134207367897034,
+      "num_trials": 10000,
+      "num_target": 5000,
+      "num_impostor": 5000
+    },
+    "clean_noise_snr_5": {
+      "eer": 0.02539999999999999,
+      "eer_threshold": 0.20841176807880402,
+      "min_dcf": 0.20220000000000002,
+      "min_dcf_threshold": 0.39912986755371094,
+      "num_trials": 10000,
+      "num_target": 5000,
+      "num_impostor": 5000
+    },
+    "clean_playback_alaw_snr25_phone": {
+      "eer": 0.10880000000000001,
+      "eer_threshold": 0.10135576874017715,
+      "min_dcf": 0.5761999999999999,
+      "min_dcf_threshold": 0.2786063849925995,
+      "num_trials": 10000,
+      "num_target": 5000,
+      "num_impostor": 5000
+    },
+    "clean_playback_gsm_snr20_webcam_budget": {
+      "eer": 0.12099999999801317,
+      "eer_threshold": 0.09135071188211441,
+      "min_dcf": 0.626,
+      "min_dcf_threshold": 0.2626242935657501,
+      "num_trials": 10000,
+      "num_target": 5000,
+      "num_impostor": 5000
+    },
+    "clean_playback_ulaw_snr15_laptop_internal": {
+      "eer": 0.10679999999956147,
+      "eer_threshold": 0.09472738206386566,
+      "min_dcf": 0.6398,
+      "min_dcf_threshold": 0.2686050832271576,
+      "num_trials": 10000,
+      "num_target": 5000,
+      "num_impostor": 5000
+    },
+    "clean_reverb": {
+      "eer": 0.0594,
+      "eer_threshold": 0.14315833151340485,
+      "min_dcf": 0.3486,
+      "min_dcf_threshold": 0.31902584433555603,
+      "num_trials": 10000,
+      "num_target": 5000,
+      "num_impostor": 5000
+    }
+  }
+}

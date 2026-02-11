@@ -1,0 +1,39 @@
+{
+  "generated_at": "2026-01-30T03:24:39.327734",
+  "benchmark_version": "1.0.0",
+  "models_evaluated": 4,
+  "results": [
+    {
+      "model_name": "Resemblyzer",
+      "case_score": 2.008427417099567,
+      "clean_eer": 0.04839999999808221,
+      "codec_eer": 0.0695999999999993,
+      "reverb_eer": 0.18489999999999998,
+      "playback_eer": 0.21273333333216304
+    },
+    {
+      "model_name": "WeSpeaker ResNet34",
+      "case_score": 5.030331746019767,
+      "clean_eer": 0.0058,
+      "codec_eer": 0.017285714285713398,
+      "reverb_eer": 0.05879999999999995,
+      "playback_eer": 0.08573333333296689
+    },
+    {
+      "model_name": "SpeechBrain ECAPA-TDNN",
+      "case_score": 5.271993423951916,
+      "clean_eer": 0.005599999999999776,
+      "codec_eer": 0.01762857142860399,
+      "reverb_eer": 0.04979999999814662,
+      "playback_eer": 0.09373333333286672
+    },
+    {
+      "model_name": "NeMo TitaNet-L",
+      "case_score": 5.972576671433456,
+      "clean_eer": 0.006599999999998824,
+      "codec_eer": 0.016128571428184694,
+      "reverb_eer": 0.08059999999998163,
+      "playback_eer": 0.12613333333279006
+    }
+  ]
+}
